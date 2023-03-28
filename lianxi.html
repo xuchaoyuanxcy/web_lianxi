@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 80px;
+            height: 80px;
+            background: red;
+            animation-name: identifier;
+            animation-direction: alternate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            position: relative;
+        }
+        @keyframes identifier {
+            0%{
+                left: 0px;
+                top: 0px;
+                background: red;
+                transform: scale(1,1);
+            }
+            25%{
+                left: 200px;
+                top: 0px;
+                background: blue;
+                transform: scale(0.5,0.5);
+            }
+            50%{
+                left: 200px;
+                top: 200px;
+                background: yellow;
+                transform: scale(0.25,0.25);
+            }
+            75%{
+                left: 0px;
+                top: 200px;
+                background: green;
+                transform: scale(0.5,0.5);
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                background: red;
+                transform: scale(1,1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
